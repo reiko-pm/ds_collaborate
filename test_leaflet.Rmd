@@ -1,0 +1,29 @@
+---
+title: "test_leaflet"
+author: "Carole"
+date: "December 1, 2017"
+#output: ioslides.presentation
+output: ioslides_presentation
+---
+# Ben's leaflet code
+
+
+```{r}
+library(leaflet) #install.packages("leaflet")
+leaflet() %>% 
+  addProviderTiles(providers$Esri.OceanBasemap) %>%
+  addMarkers(-121.788163, 36.802151, label = "R rocks at MBARI!")
+
+
+#library(tidyverse)
+#library(nycflights13) # install.packages("nycflights13")
+#flights
+
+# jan 1 data
+#flights %>% 
+#  filter(month==1,
+#         day == 1)
+
+
+
+```
