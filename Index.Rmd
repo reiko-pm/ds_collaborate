@@ -2,9 +2,33 @@
 title: "Collaborate"
 author: "Carole"
 date: "December 1, 2017"
+#output: ioslides.presentation
 output: html_document
 ---
 # This is our analysis
 
 Reiko & Carole
 This is called index but Julie called it collab
+
+
+
+```{r}
+#library(leaflet)
+#leaflet() %>% 
+#addProviderTiles(Provider$Esri.OceanBasemap) %>% 
+#addMarkers(-122.788163, 36.802151)
+
+
+library(tidyverse)
+library(nycflights13) # install.packages("nycflights13")
+#flights
+
+# jan 1 data
+flights %>% 
+  filter(month==1,
+         day == 1)
+
+
+
+```
+
