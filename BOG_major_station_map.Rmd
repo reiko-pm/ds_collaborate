@@ -1,11 +1,13 @@
 ---
-title: "BOG_major_station_map"
-author: "R. Michisaki"
-date: "December 5, 2017"
+title: "BOG major station map"
 output: ioslides_presentation
 ---
+<!-- 
+
+author: "R. Michisaki"
+date: "December 5, 2017"
 # Baby steps in R
-# From Ben Best's code and https://rstudio.github.io/leaflet/
+# From Ben Best's code and https://rstudio.github.io/leaflet/ -->
 
 
 ```{r map stations, echo=FALSE}
