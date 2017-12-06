@@ -1,0 +1,26 @@
+---
+title: "BOG_major_station_map"
+author: "R. Michisaki"
+date: "December 5, 2017"
+output: ioslides_presentation
+---
+# Baby steps in R
+# From Ben Best's code and https://rstudio.github.io/leaflet/
+
+
+```{r map stations, echo=FALSE}
+
+lon=c(-121.8470,-122.0220,-122.3760)
+lat=c(36.7970,36.750,36.6941)
+library(leaflet) #install.packages("leaflet")
+leaflet() %>% 
+  addProviderTiles(providers$Esri.NatGeoWorldMap) %>%
+  addCircleMarkers(lon, lat, label = c("C1 -121.8470 36.7970","M1 -122.0220 36.75","M2 -122.376 36.6941")) %>% 
+  setView(-122.3760,36.6940,zoom = 9)
+#  addCircleMarkers(
+#    radius = ~ifelse(type == "ship", 6, 10),
+#    color = ~pal(type),
+#    stroke = FALSE, fillOpacity = 0.5
+#  )
+
+```
