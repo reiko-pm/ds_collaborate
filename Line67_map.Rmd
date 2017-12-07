@@ -1,0 +1,28 @@
+---
+title: "CalCOFI Line 67"
+output: ioslides_presentation
+---
+<!--
+author: "R. Michisaki"
+date: "December 6, 2017"
+-->
+
+```{r setup, echo=FALSE}
+
+
+df <- read.csv("https://raw.githubusercontent.com/reiko-pm/ds_collaborate/gh-pages/data/Line67_stations.csv")
+loc <- paste0(df$station,": ",df$dec_long,", ",df$dec_lat)
+
+library(leaflet) #install.packages("leaflet")
+leaflet(df) %>% 
+  addProviderTiles(providers$Esri.NatGeoWorldMap) %>%
+  addCircleMarkers(~dec_long, ~dec_lat,
+                   radius = 6,
+                   label = loc,
+                   labelOptions = labelOptions(noHide = F)) %>% 
+  setView(-123.48,36.120,zoom = 8)
+
+
+
+```
+
