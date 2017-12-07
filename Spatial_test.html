@@ -123,8 +123,21 @@ lapply(x, library, character.only = TRUE) # load the required packages
 
 <p>Hover over blue markers for station name and location</p>
 
-<div id="htmlwidget-0bddf4d42ce85023412a" style="width:720px;height:432px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-0bddf4d42ce85023412a">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["Esri.NatGeoWorldMap",null,null,{"errorTileUrl":"","noWrap":false,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false}]},{"method":"addCircleMarkers","args":[[36.78,36.62,36.45,36.28,36.12,35.95,35.78,35.62,35.45,36.747,36.797,36.697],[-122.05,-122.41,-122.77,-123.12,-123.48,-123.84,-124.19,-124.54,-124.9,-122.022,-121.847,-122.378],6,null,null,{"lineCap":null,"lineJoin":null,"clickable":true,"pointerEvents":null,"className":"","stroke":true,"color":"#03F","weight":5,"opacity":0.5,"fill":true,"fillColor":"#03F","fillOpacity":0.2,"dashArray":null},null,null,null,null,["67-50: -122.05, 36.78","67-55: -122.41, 36.62","67-60: -122.77, 36.45","67-65: -123.12, 36.28","67-70: -123.48, 36.12","67-75: -123.84, 35.95","67-80: -124.19, 35.78","67-85: -124.54, 35.62","67-90: -124.9, 35.45","M1: -122.022, 36.747","C1: -121.847, 36.797","M2: -122.378, 36.697"],{"clickable":false,"noHide":false,"direction":"right","opacity":1,"offset":[12,-15],"textsize":"10px","textOnly":false,"style":null,"zoomAnimation":true,"className":""},null]}],"limits":{"lat":[35.45,36.797],"lng":[-124.9,-121.847]},"setView":[[36.12,-123.48],8,[]]},"evals":[],"jsHooks":[]}</script></article></slide>
+<div id="htmlwidget-08d74ec2876cec6d7543" style="width:720px;height:432px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-08d74ec2876cec6d7543">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["Esri.NatGeoWorldMap",null,null,{"errorTileUrl":"","noWrap":false,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false}]},{"method":"addCircleMarkers","args":[[36.78,36.62,36.45,36.28,36.12,35.95,35.78,35.62,35.45,36.747,36.797,36.697],[-122.05,-122.41,-122.77,-123.12,-123.48,-123.84,-124.19,-124.54,-124.9,-122.022,-121.847,-122.378],6,null,null,{"lineCap":null,"lineJoin":null,"clickable":true,"pointerEvents":null,"className":"","stroke":true,"color":"#03F","weight":5,"opacity":0.5,"fill":true,"fillColor":"#03F","fillOpacity":0.2,"dashArray":null},null,null,null,null,["67-50: -122.05, 36.78","67-55: -122.41, 36.62","67-60: -122.77, 36.45","67-65: -123.12, 36.28","67-70: -123.48, 36.12","67-75: -123.84, 35.95","67-80: -124.19, 35.78","67-85: -124.54, 35.62","67-90: -124.9, 35.45","M1: -122.022, 36.747","C1: -121.847, 36.797","M2: -122.378, 36.697"],{"clickable":false,"noHide":false,"direction":"right","opacity":1,"offset":[12,-15],"textsize":"10px","textOnly":false,"style":null,"zoomAnimation":true,"className":""},null]}],"limits":{"lat":[35.45,36.797],"lng":[-124.9,-121.847]},"setView":[[36.12,-123.48],8,[]]},"evals":[],"jsHooks":[]}</script>
+
+</article></slide><slide class=''><hgroup><h2>SUMMARY</h2></hgroup><article  id="summary">
+
+<pre class = 'prettyprint lang-r'>summary(df)</pre>
+
+<pre >##     station     dec_lat         dec_long         distance     
+##  67-50  :1   Min.   :35.45   Min.   :-124.9   Min.   :  8.00  
+##  67-55  :1   1st Qu.:35.91   1st Qu.:-123.9   1st Qu.: 50.75  
+##  67-60  :1   Median :36.37   Median :-122.9   Median :113.50  
+##  67-65  :1   Mean   :36.27   Mean   :-123.1   Mean   :134.92  
+##  67-70  :1   3rd Qu.:36.71   3rd Qu.:-122.3   3rd Qu.:216.00  
+##  67-75  :1   Max.   :36.80   Max.   :-121.8   Max.   :316.00  
+##  (Other):6</pre></article></slide>
 
 
   <slide class="backdrop"></slide>
